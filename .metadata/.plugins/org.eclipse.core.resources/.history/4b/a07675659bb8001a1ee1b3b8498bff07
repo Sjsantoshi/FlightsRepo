@@ -1,0 +1,9 @@
+package Flights.Framework;
+
+public class FlightsPageObject {
+	
+public FlightsPageObject
+{
+	
+}
+}

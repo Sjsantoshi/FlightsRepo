@@ -1,5 +1,52 @@
 package Flights.Framework;
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
 public class FlightsPageObject {
+	
+ WebDriver driver;
+
+public FlightsPageObject(WebDriver driver)
+{
+	this.driver=driver;
+	PageFactory.initElements(driver, this);
+}
+
+@FindBy(xpath = "//*[@href='#flights']")
+WebElement flightsTab;
+
+@FindBy(xpath = "//*[contains(text(), 'Round Trip')]")
+WebElement roundTrip;
+
+@FindBy(xpath = "//*[@id=\"flights\"]/div/div/form/div/div[1]/div[2]/div/div/a")
+WebElement dropdown;
+
+@FindBy(xpath = "//*[@id=\"flights\"]/div/div/form/div/div[1]/div[2]/div/div/div/ul/li[2]")
+WebElement business;
+
+public WebElement getFlightsTab()
+{
+	return flightsTab;
+}
+
+public WebElement getRoundTrip()
+{
+	return roundTrip;
+}
+
+
+public WebElement getDropdown() {
+	return dropdown;
+}
+
+public WebElement getBusiness()
+{
+	return business;
+}
+
+
 
 }
