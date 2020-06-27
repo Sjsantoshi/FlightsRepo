@@ -1,0 +1,9 @@
+package Flights.Framework;
+
+import org.testng.annotations.Test;
+
+public class FlightsFunction {
+  @Test
+  public void f() {
+  }
+}
