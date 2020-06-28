@@ -2,6 +2,7 @@ package Flights.Framework;
 
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
@@ -25,12 +26,28 @@ public class FlightsFunction {
   @Test
   public void getInfo() throws InterruptedException {
 	  FlightsPageObject fpo = new FlightsPageObject(driver);
+	  JavascriptExecutor js = (JavascriptExecutor)driver;
+	  //Clicks on Flights, Round Trip and selects Business from Dropdown
 	  fpo.getFlightsTab().click();
 	  fpo.getRoundTrip().click();
 	  fpo.getDropdown().click();
 	  fpo.getBusiness().click();
+      fpo.getDepart().click();
+
+      //Flights from NY to MIA on July and returning on July End
+	  fpo.getMonth().click();
+	  js.executeScript("window.scrollBy(0, 200)");
+	  fpo.getSelectMonth().click();
+	  fpo.getSelectDate().click();
+	  fpo.getReturnDate().click();
+	  Thread.sleep(3000);
 	  
+	  //Selects one Adult abd one infant and searches the flights
+	  fpo.addAdult().click();
+	  fpo.addInfant().click();
+	  fpo.getSearch().click();
 	  
+	  System.out.println("The Available flights from NY to MIA" +driver.getPageSource());
 	  
   }
   
