@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Flights.Framework.FlightsFunction">
+      <class name="Flights.Framework.FlightsFunctionTest">
         <methods>
           <include name="getInfo"/>
-          <include name="quit"/>
           <include name="initialize"/>
+          <include name="quit"/>
         </methods>
-      </class> <!-- Flights.Framework.FlightsFunction -->
+      </class> <!-- Flights.Framework.FlightsFunctionTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

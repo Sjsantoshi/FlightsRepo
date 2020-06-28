@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="28156" started-at="2020-06-28T03:28:35 CDT" finished-at="2020-06-28T03:29:03 CDT">
+  <suite name="Default suite" duration-ms="30188" started-at="2020-06-28T06:48:12 CDT" finished-at="2020-06-28T06:48:43 CDT">
     <groups>
     </groups>
-    <test name="Test" duration-ms="28156" started-at="2020-06-28T03:28:35 CDT" finished-at="2020-06-28T03:29:03 CDT">
-      <class name="Flights.Framework.FlightsFunction">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:Flights.Framework.FlightsFunction@4bbfb90a]" name="initialize" is-config="true" duration-ms="13131" started-at="2020-06-28T03:28:35 CDT" finished-at="2020-06-28T03:28:48 CDT">
+    <test name="Default test" duration-ms="30188" started-at="2020-06-28T06:48:12 CDT" finished-at="2020-06-28T06:48:43 CDT">
+      <class name="Flights.Framework.FlightsFunctionTest">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:Flights.Framework.FlightsFunctionTest@4bbfb90a]" name="initialize" is-config="true" duration-ms="13373" started-at="2020-06-28T06:48:12 CDT" finished-at="2020-06-28T06:48:26 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="getInfo()[pri:0, instance:Flights.Framework.FlightsFunction@4bbfb90a]" name="getInfo" duration-ms="14301" started-at="2020-06-28T03:28:48 CDT" finished-at="2020-06-28T03:29:03 CDT">
+        <test-method status="PASS" signature="getInfo()[pri:0, instance:Flights.Framework.FlightsFunctionTest@4bbfb90a]" name="getInfo" duration-ms="15992" started-at="2020-06-28T06:48:26 CDT" finished-at="2020-06-28T06:48:42 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getInfo -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:Flights.Framework.FlightsFunction@4bbfb90a]" name="quit" is-config="true" duration-ms="681" started-at="2020-06-28T03:29:03 CDT" finished-at="2020-06-28T03:29:03 CDT">
+        <test-method status="PASS" signature="quit()[pri:0, instance:Flights.Framework.FlightsFunctionTest@4bbfb90a]" name="quit" is-config="true" duration-ms="749" started-at="2020-06-28T06:48:42 CDT" finished-at="2020-06-28T06:48:43 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
-      </class> <!-- Flights.Framework.FlightsFunction -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- Flights.Framework.FlightsFunctionTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -9,7 +9,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class FlightsFunction {
+public class FlightsFunctionTest {
 	String baseUrl = "https://www.phptravels.net/home";
 	WebDriver driver;
 	
@@ -25,7 +25,7 @@ public class FlightsFunction {
 	
   @Test
   public void getInfo() throws InterruptedException {
-	  FlightsPageObject fpo = new FlightsPageObject(driver);
+	  FlightsPageObjectTest fpo = new FlightsPageObjectTest(driver);
 	  JavascriptExecutor js = (JavascriptExecutor)driver;
 	  //Clicks on Flights, Round Trip and selects Business from Dropdown
 	  fpo.getFlightsTab().click();
@@ -47,7 +47,7 @@ public class FlightsFunction {
 	  fpo.addInfant().click();
 	  fpo.getSearch().click();
 	  
-	  System.out.println("The Available flights from NY to MIA" +driver.getPageSource());
+	  System.out.println("Results::" + "  " +driver.getTitle());
 	  
   }
   
